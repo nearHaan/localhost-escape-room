@@ -1,1 +1,33 @@
 @import 'tailwindcss';
+
+@theme {
+	--spacing-x: 1rem;
+	--spacing-xs: 0.8rem;
+	--spacing-xxs: 0.6rem;
+	--spacing-xxxs: 0.4rem;
+	--spacing-xxxxs: 0.2rem;
+
+	--color-light-grey: #f9f9f9;
+	--color-grey: #f0f0f0;
+	--color-dark-grey: #808080;
+}
+
+@layer base {
+	h1 {
+		@apply text-center text-2xl font-bold;
+	}
+
+	p {
+		@apply text-sm text-dark-grey;
+	}
+}
+
+@layer utilities {
+	.btn-primary {
+		@apply w-full rounded bg-black p-xxxs text-white;
+	}
+
+	.input-primary {
+		@apply rounded-sm bg-grey px-xxxs py-xxxxs text-black;
+	}
+}
