@@ -11,7 +11,8 @@
 			"Concatenate to form one number"
 		],
 		"expectedOp": "Number",
-		"gameType": "text"
+		"gameType": "text",
+		"answer": "2459"
 	},
 	{
 		"round": 2,
@@ -24,6 +25,7 @@
 			"Take absolute value if negative"
 		],
 		"expectedOp": "Number",
-		"gameType": "text"
+		"gameType": "text",
+		"answer": "7"
 	}
 ]
