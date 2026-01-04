@@ -1,0 +1,29 @@
+[
+	{
+		"round": 1,
+		"title": "The Locked Room",
+		"message": "",
+		"img": ["round-img/round-1.png"],
+		"tasks": [
+			"Find all hidden numbers in the image",
+			"Ignore duplicates",
+			"Sort in ascending order",
+			"Concatenate to form one number"
+		],
+		"expectedOp": "Number",
+		"gameType": "text"
+	},
+	{
+		"round": 2,
+		"title": "Binary Access Pannel",
+		"message": "The system understands only two states. Translate before you operate",
+		"img": ["round-img/round-1.png"],
+		"tasks": [
+			"Convert binary to decimal",
+			"Subtract Round 1 output",
+			"Take absolute value if negative"
+		],
+		"expectedOp": "Number",
+		"gameType": "text"
+	}
+]
