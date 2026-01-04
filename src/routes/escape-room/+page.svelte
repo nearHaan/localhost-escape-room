@@ -1,19 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import type { PageData } from '../$types';
-
-	type RoundData = {
-		round: number;
-		title: string;
-		message: string;
-		img: Array<string>;
-		tasks: Array<string>;
-		expectedOp: string;
-		gameType: string;
-		finished?: boolean;
-		answer: string;
-		givenAnswer?: string;
-	};
+	import type { RoundData } from '$lib/types';
 
 	const { data } = $props<{ data: PageData }>();
 
@@ -42,7 +30,7 @@
 					{activeRound!.message}
 				</p>
 				<!-- svelte-ignore a11y_img_redundant_alt -->
-				<img class="max-w-100" alt="clue-image" src={activeRound!.img[0]} />
+				<img class="max-w-100" alt="clue-image" src={activeRound!.assets[0]} />
 				<div class="mt-x w-full">
 					<p class="body-title">Tasks:</p>
 					<ul class="body ml-x list-decimal">

@@ -2,8 +2,8 @@
 	{
 		"round": 1,
 		"title": "The Locked Room",
-		"message": "",
-		"img": ["round-img/round-1.png"],
+		"message": "Some information is hidden in plain sight. Look carefully at what feels ordinary",
+		"assets": ["round-img/round-1.png"],
 		"tasks": [
 			"Find all hidden numbers in the image",
 			"Ignore duplicates",
@@ -18,7 +18,7 @@
 		"round": 2,
 		"title": "Binary Access Pannel",
 		"message": "The system understands only two states. Translate before you operate",
-		"img": ["round-img/round-1.png"],
+		"assets": ["round-img/round-1.png"],
 		"tasks": [
 			"Convert binary to decimal",
 			"Subtract Round 1 output",
@@ -27,5 +27,94 @@
 		"expectedOp": "Number",
 		"gameType": "text",
 		"answer": "7"
+	},
+	{
+		"round": 3,
+		"title": "Pattern Firewall",
+		"message": "Order exists even in chaos. Identify the rule before completing the sequence",
+		"assets": ["round-img/round-1.png"],
+		"tasks": [
+			"Identify missing block in grid",
+			"Convert pattern to binary",
+			"Convert binary to decimal"
+		],
+		"expectedOp": "Number",
+		"gameType": "text",
+		"answer": "7"
+	},
+	{
+		"round": 4,
+		"title": "Network Snapshot",
+		"message": "Logs never lie, but they never tell the full truth either",
+		"assets": ["round-img/round-1.png"],
+		"tasks": ["Analyze terminal log", "Find missing IP octet", "Add all digits of IP"],
+		"expectedOp": "Number",
+		"gameType": "text",
+		"answer": "31"
+	},
+	{
+		"round": 5,
+		"title": "The Dying Signal",
+		"message": "Not all messages are meant to be heard. Some are meant to be noticed",
+		"assets": ["round-img/round-1.png"],
+		"tasks": [
+			"Observe blinking signal",
+			"Decode Morse sequence",
+			"Count dots and dashes",
+			" (dot × 1) + (dash × 2)"
+		],
+		"expectedOp": "Number",
+		"gameType": "text",
+		"answer": "12"
+	},
+	{
+		"round": 6,
+		"title": "Image Overlay Lock",
+		"message": "Truth emerges only when layers align",
+		"assets": ["round-img/round-1.png"],
+		"tasks": ["Add Round 3 output to X", "Find X"],
+		"expectedOp": "Number",
+		"gameType": "text",
+		"answer": "18"
+	},
+	{
+		"round": 7,
+		"title": "Source Code Left Open",
+		"message": "What you see is never the full story. Look underneath",
+		"assets": ["round-img/round-1.png"],
+		"tasks": ["Inspect HTML source", "Find hidden numbers", "Add them together"],
+		"expectedOp": "Number",
+		"gameType": "text",
+		"answer": "42"
+	},
+	{
+		"round": 8,
+		"title": "Network Snapshot",
+		"message": "Security failures often repeat themselves — but with higher stakes",
+		"assets": ["round-img/round-1.png"],
+		"tasks": ["Analyze open ports", "Find missing port", "Add digits and XOR with Round 5 output"],
+		"expectedOp": "Number",
+		"gameType": "text",
+		"answer": "34"
+	},
+	{
+		"round": 9,
+		"title": "Audio Without Sound",
+		"message": "Even silence leaves fingerprints",
+		"assets": ["round-img/round-1.png"],
+		"tasks": ["Multiply Round 2 output with X", "Find X"],
+		"expectedOp": "Number",
+		"gameType": "text",
+		"answer": "87"
+	},
+	{
+		"round": 10,
+		"title": "EXIT PROTOCOL",
+		"message": "The system remembers what you uncovered, not what you calculated",
+		"assets": ["round-img/round-1.png"],
+		"tasks": ["Arrange in breach order", "Enter final 5-digit code"],
+		"expectedOp": "5-digit Code",
+		"gameType": "text",
+		"answer": "87"
 	}
 ]
