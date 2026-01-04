@@ -24,10 +24,34 @@
 
 @layer utilities {
 	.btn-primary {
-		@apply w-full rounded bg-black p-xxxs text-white;
+		@apply w-full cursor-pointer rounded bg-black p-xxxs text-white;
+	}
+
+	.btn-secondary {
+		@apply w-full cursor-pointer rounded bg-grey p-xxxs text-black;
 	}
 
 	.input-primary {
-		@apply rounded-sm bg-grey px-xxxs py-xxxxs text-black;
+		@apply w-full rounded-sm bg-grey px-xxxs py-xxxxs text-black;
+	}
+
+	.timer-text {
+		@apply text-3xl font-bold text-red-600;
+	}
+
+	.body-title {
+		@apply text-lg font-bold text-black;
+	}
+
+	.body {
+		@apply text-lg text-black;
+	}
+
+	.message-hint {
+		@apply text-center text-lg text-black italic;
+	}
+
+	.error {
+		@apply my-xxxs rounded bg-red-100 px-xxs py-xxxs text-red-500;
 	}
 }
