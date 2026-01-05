@@ -64,7 +64,7 @@
 			" (dot × 1) + (dash × 2)"
 		],
 		"expectedOp": "Number",
-		"gameType": "text",
+		"gameType": "video",
 		"answer": "12"
 	},
 	{
@@ -74,7 +74,7 @@
 		"assets": ["round-img/round-1.png"],
 		"tasks": ["Add Round 3 output to X", "Find X"],
 		"expectedOp": "Number",
-		"gameType": "text",
+		"gameType": "align-pic",
 		"answer": "18"
 	},
 	{

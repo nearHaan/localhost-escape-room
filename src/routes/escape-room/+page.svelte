@@ -30,7 +30,27 @@
 					{activeRound!.message}
 				</p>
 				<!-- svelte-ignore a11y_img_redundant_alt -->
-				<img class="max-w-100" alt="clue-image" src={activeRound!.assets[0]} />
+				{#if activeRound.gameType === 'text'}
+					<img class="max-w-100" alt="clue-image" src={activeRound!.assets[0]} />
+				{/if}
+
+				{#if activeRound.gameType === 'video'}
+					<iframe
+						class="aspect-video w-100"
+						src={activeRound.assets[0]}
+						title="YouTube video player"
+						frameborder="0"
+					></iframe>
+				{/if}
+
+				{#if activeRound.gameType === 'align-pic'}
+					<iframe
+						class="aspect-video w-100"
+						src={activeRound.assets[0]}
+						title="YouTube video player"
+						frameborder="0"
+					></iframe>
+				{/if}
 				<div class="mt-x w-full">
 					<p class="body-title">Tasks:</p>
 					<ul class="body ml-x list-decimal">
@@ -46,7 +66,10 @@
 					<input type="text" class="input-primary" />
 					<button
 						onclick={() => {
-							activeRound!.finished = true;
+							rounds = rounds.map((round) =>
+								round.round === activeRound?.round ? { ...round, finished: true } : round
+							);
+							activeRound = rounds[activeRound!.round];
 						}}
 						class="btn-primary mt-xs">Submit</button
 					>
